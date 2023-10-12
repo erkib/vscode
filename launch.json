@@ -5,15 +5,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "React App",
-      "request": "launch",
-      "runtimeArgs": ["run", "dev"],
-      "runtimeExecutable": "npm",
-      "skipFiles": ["<node_internals>/**"],
-      "type": "node"
-    },
-    {
-      "name": "NextJS App",
+      "name": "React/NextJS App",
       "request": "launch",
       "runtimeArgs": ["run", "dev"],
       "runtimeExecutable": "npm",

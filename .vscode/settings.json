@@ -1,5 +1,5 @@
 {
-  "editor.tabSize": 2,
+  "editor.tabSize": 4,
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
 
@@ -10,6 +10,7 @@
   "python.testing.unittestEnabled": false,
   "python.analysis.completeFunctionParens": true,
 
+  "isort.check": true,
   "isort.args": ["--profile", "black"],
 
   "typescript.autoClosingTags": true,
@@ -30,6 +31,20 @@
   "typescript.suggest.completeJSDocs": true,
   "typescript.suggest.enabled": true,
 
+  "markdown.validate.enabled": true,
+
+  "yaml.format.printWidth": 120,
+
+  "prettier.printWidth": 120,
+  "prettier.quoteProps": "consistent",
+
+  "git.allowForcePush": true,
+  "git.branchProtection": ["main", "master"],
+  "git.defaultBranchName": "master",
+  "git.fetchOnPull": true,
+  "git.pruneOnFetch": true,
+  "git.rebaseWhenSync": true,
+
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.codeActionsOnSave": {
@@ -47,16 +62,5 @@
   "[html]": {
     "editor.suggest.insertMode": "replace",
     "editor.defaultFormatter": "batisteo.vscode-django"
-  },
-  "markdown.validate.enabled": true,
-  "yaml.format.printWidth": 120,
-  "prettier.printWidth": 120,
-  "prettier.quoteProps": "consistent",
-  "isort.check": true,
-  "git.allowForcePush": true,
-  "git.branchProtection": ["main", "master"],
-  "git.defaultBranchName": "master",
-  "git.fetchOnPull": true,
-  "git.pruneOnFetch": true,
-  "git.rebaseWhenSync": true
+  }
 }
