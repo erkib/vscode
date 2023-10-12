@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "toolname"
+version = "1.0.0"
+description = "Describe the tool"
+authors = ["Erki Bender <erki.bender@gmail.com>"]
+license = "Proprietary"
+readme = "README.md"
+
+[tool.poetry.scripts]
+toolname = "manage:main"
+
+[tool.poetry.dependencies]
+python = ">=3.8.1"
+
+[tool.poetry.group.dev.dependencies]
+colorama = "0.4.6"
+pytest = "7.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+include-trailing-comma = true
+force-grid-wrap = 0
+use-parentheses = true
+ensure-newline-before-comments = true
+
+[tool.pytest.ini_options]
+python_files = ["tests.py", "tests_*.py"]
+norecursedirs = [".git", ".venv", "_local", ".idea", ".vscode", ".pytest_cache", ".mypy_cache"]
+DJANGO_SETTINGS_MODULE = "toolname.settings.settings_unittest"
