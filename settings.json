@@ -5,6 +5,10 @@
 
   "makefile.extensionOutputFolder": "./.vscode",
 
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": ["--fast"],
+  "python.linting.flake8Enabled": true,
+  "python.linting.mypyEnabled": true,
   "python.terminal.activateEnvInCurrentTerminal": true,
   "python.testing.pytestEnabled": false,
   "python.testing.unittestEnabled": false,
@@ -12,6 +16,13 @@
 
   "isort.check": true,
   "isort.args": ["--profile", "black"],
+
+  "mypy-type-checker.preferDaemon": true,
+
+  "csharp.format.enable": true,
+
+  "razor.devmode": true,
+  "razor.format.enable": true,
 
   "typescript.autoClosingTags": true,
   "typescript.check.npmIsInstalled": true,
@@ -51,10 +62,14 @@
       "source.organizeImports": true
     }
   },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[json]": {
     "editor.quickSuggestions": {
       "strings": true
-    }
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[bicep]": {
     "editor.insertSpaces": true
@@ -62,5 +77,14 @@
   "[html]": {
     "editor.suggest.insertMode": "replace",
     "editor.defaultFormatter": "batisteo.vscode-django"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[csharp]": {
+    "editor.defaultFormatter": "csharpier.csharpier-vscode"
+  },
+  "[razor]": {
+    "editor.defaultFormatter": "ms-dotnettools.csdevkit"
   }
 }
