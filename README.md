@@ -10,3 +10,5 @@ Visual Studio Code config I have found most suitable for me.
 - ms-python.flake8
 - ms-python.mypy-type-checker
 - ms-azuretools.vscode-bicep
+- ms-dotnettools.csdevkit
+- csharpier.csharpier-vscode
