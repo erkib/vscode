@@ -82,7 +82,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[csharp]": {
-    "editor.defaultFormatter": "csharpier.csharpier-vscode"
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
   },
   "[razor]": {
     "editor.defaultFormatter": "ms-dotnettools.csdevkit"
